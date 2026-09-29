@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineering Workshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Engineering Workshop Website</h1>
+        <p>Learn and Practice Hands-On Engineering Skills</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#intro">Introduction</a>
+        <a href="#tools">Tools</a>
+        <a href="#safety">Safety Rules</a>
+        <a href="#gallery">Images</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Workshop Introduction -->
+        <div id="intro" class="section">
+            <h2>Workshop Introduction</h2>
+            <p>Welcome to our Engineering Workshop! This section is dedicated to training students in basic mechanical and electrical tools. Here, students get practical knowledge on how to operate various hand tools, power tools, and workshop machinery correctly and safely.</p>
+        </div>
+
+        <!-- Engineering Tools & Tool Information Cards -->
+        <div id="tools" class="section">
+            <h2>Engineering Tools</h2>
+            <div class="tools-container">
+
+                <div class="tool-card">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=400&q=80" alt="Lathe Machine">
+                    <h3>Lathe Machine</h3>
+                    <p><strong>Use:</strong> Used for cutting, turning, knurling, and drilling metal workpieces by rotating them against a cutting tool.</p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1AeDawN6aTDTqLAh9QmUjVavImX4-h9abu7x_TLSEA&s=10" alt="Milling Machine">
+                    <h3>Milling Machine</h3>
+                    <p><strong>Use:</strong> Used to machine flat and uneven surfaces by removing material using a rotating cutter.</p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80" alt="Welding Kit">
+                    <h3>Welding Machine</h3>
+                    <p><strong>Use:</strong> Used to join two metal parts together by melting the pieces using electrical arc heat.</p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" alt="Multimeter">
+                    <h3>Digital Multimeter</h3>
+                    <p><strong>Use:</strong> Used for measuring electrical properties like voltage, current, and resistance in circuits.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Safety Rules -->
+        <div id="safety" class="section">
+            <h2>Safety Rules</h2>
+            <p>Always follow these rules inside the engineering workshop to avoid accidents:</p>
+            <ul>
+                <li>Wear safety shoes and protective goggles at all times.</li>
+                <li>Do not wear loose clothes or dangling jewelry while working near machines.</li>
+                <li>Inspect all tools and equipment before turning them on.</li>
+                <li>Keep your workbench clean and dry.</li>
+                <li>Know the location of emergency stop buttons and fire extinguishers.</li>
+            </ul>
+        </div>
+
+        <!-- Workshop Images -->
+        <div id="gallery" class="section">
+            <h2>Workshop Images</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Workshop 1">
+                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80" alt="Workshop 2">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Workshop 3">
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2>Contact Section</h2>
+            <div class="contact-box">
+                <div class="contact-details">
+                    <h3>National Institute Of Engineering Mysuru</h3>
+                    <p>Department of Engineering</p>
+                    <p>South Campus </p>
+                    <p>Email: nie@gmail.com</p>
+                    <p>Phone: +91 80 1234 5678</p>
+                </div>
+                
+                <form class="contact-form" onsubmit="return validateForm()">
+                    <label>Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label>Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Engineering Workshop Project. All Rights Reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
