@@ -1,0 +1,174 @@
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #5bb3f0; /* Light blue background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+}
+
+/* Profile Photo Circle */
+.photo-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  background-color: #ffd633;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Cards Section */
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Reusable Card Styles with Image Container */
+.card-img {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fits image without distorting proportions */
+}
+
+/* Optional Overlay Label on Top of Image */
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55); /* Dark semi-transparent background */
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* Card Sizes */
+.education-row .card {
+  flex: 1;
+  max-width: 220px;
+  height: 140px;
+}
+
+.achievements-row .card {
+  width: 220px;
+  height: 140px;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-row .card,
+  .achievements-row .card {
+    width: 100%;
+    max-width: 280px;
+  }
+ 
+}
+
+ /* --- Achievements List Styles --- */
+
+/* Overrides default card styling for the achievement section */
+.achievement-card {
+  background-color: #8ac926; /* Green background */
+  color: #1b4332; /* Dark green text */
+  width: 100%;
+  max-width: 450px; /* Slightly wider to fit list items nicely */
+  min-height: 140px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left for readability */
+  justify-content: center;
+}
+
+.achievement-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.achievements-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.achievements-list li {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
